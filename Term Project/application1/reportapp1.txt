@@ -1,0 +1,26 @@
+Runtime for each function of Application 1
+
+1. SET *createSet - Efficiency: O(1)
+
+2. void destroySet - Efficiency: O(n)
+
+3. void searchAge - Efficiency: O(1)
+
+4. int findIndex - Efficiency: O(1)
+
+4. void insertion - Efficiency: O(1)
+
+5. void deletion - Efficiency: O(1)
+
+5. int maxAge - Efficiency: O(1)
+
+
+
+Data Structure: directly hashed array of pointers to singly linked list of students with the corresponsing index of the linked list in the array
+
+Reason for this Implementation:
+The reason for this application and array of linked lists is the most efficient method is that this allows an Implementation
+of the direct hashing to be used in a way which search, and maxAge  functions both have a runtime of O(1), along with the
+findIndex, insertion, deletion. And since a linked list("chaining") with the students of the same age means that when we are
+searching for a specific age we get to look through all of the Id's with that  age attached since this implementation 
+requires the ability to be able to return multiple records.

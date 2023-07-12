@@ -1,0 +1,21 @@
+Runtime for each function of Application 2
+
+1. SET *createSet - Efficiency: O(n)
+
+2. int searchID - Efficiency: O(n) with cases of O(1)
+
+3. void destroySet - Efficiency: O(n)
+
+4. void addElement - Efficiency: O(1) unless probing is utilized where then it will be O(n)
+
+5. void removeElement - Efficiency: O(n)
+
+
+Data Structure: A Hash Table with Chaining Implementation
+
+Reason for this Implementation:
+The reason for this application, to be done with A hash table and chaining implementation is due to the requirements
+of the frequent search operation encessary. This process allows us to create this since our focus is having repeated
+operations of search, which then can lead to delted, and more, etc. This is because since we will be using a hash function
+to insert, when we search we will essentially be working backwords effectively doing the say thing as insert in reverse
+Which lets us more quickly find the elements we need to complete the other operations required.
